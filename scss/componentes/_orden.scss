@@ -1,0 +1,68 @@
+//index//
+.servicios{
+    padding-top: $padd3;
+    margin-top: $padd3;
+}
+.caracteristicas{
+    margin-bottom: $padd3;
+    padding-bottom: $padd3;
+    padding-top: $padd3;
+    gap: $padd2;
+    margin-left: 0;
+}
+//insititución//
+.title-inst{
+    h2{
+        padding-top: $padd1;
+    }
+}
+//cursos//
+.contenedor-principal{
+    align-items: $centro;
+    margin-right: $padd2;
+    margin-bottom: $padd2;
+}
+.aprender{
+    align-items: $centro;
+}
+.ciao{
+    padding-left: $padd1;
+}
+@media (max-width:576px) {
+    .bloques{
+        justify-content: stretch;
+        margin-top: $padd3;
+        margin-left: $padd3;
+        margin-right: $padd3;
+    }
+    .ciao{
+        padding-left: 20px;
+    }
+}
+//certificacion//
+.nivelceli{
+    margin-left: $padd1;
+}
+.nivelcils{
+    margin-left: $padd1;
+}
+//contacto//
+figure{
+    h1{
+        text-align: $centro;
+    }
+}
+.formulario{
+    margin: $padd3;
+}
+section{
+    article{
+        div{
+            input{
+                margin: 2px;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

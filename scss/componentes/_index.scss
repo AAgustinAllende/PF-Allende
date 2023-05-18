@@ -1,0 +1,34 @@
+.bienvenido{
+    padding-top: 200px;
+    text-align: $centro;
+    color: white;
+    div{
+        button{
+            background-color: rgb(47,128,179);
+            color: black;
+            align-items: $centro;
+        }
+    }
+    h1, h2{
+        font-size: 40px;
+    }
+}
+body{
+    background-color: white;
+}
+.servicios{
+    background-color: $bc-gris;
+}
+#title_1{
+    text-align: $centro;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(2,59,59);
+}
+h3{
+    color: rgb(17,95,95);
+}
+p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}

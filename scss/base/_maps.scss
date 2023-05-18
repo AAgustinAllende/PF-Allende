@@ -1,0 +1,42 @@
+$foot:(
+    deco:none,
+    estilo:none,
+);
+.foot ul li{
+    text-decoration: map-get($foot, deco);
+    list-style: map-get($foot, estilo);
+}
+$bordes:(
+    curva:15px,
+    paint: 5px solid rgb(47,128,179),
+);
+.teoria2{
+    img{
+        border-radius: map-get($bordes,curva);
+        border: map-get($bordes, paint);
+    }
+}
+.metodo2{
+    img{
+        border-radius: map-get($bordes, curva);
+        border: map-get($bordes, paint );
+    }
+}
+.picture{
+    img{
+        border-radius: map-get($bordes,curva);
+        border: map-get($bordes, paint);
+    }
+}
+$contact:(
+    borde: 2px solid black,
+);
+.formulario{
+    input{
+        border: map-get($contact, borde);
+    }
+    textarea{
+        border:map-get($contact, borde);
+    }
+}
+

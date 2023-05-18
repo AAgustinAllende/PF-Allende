@@ -1,0 +1,88 @@
+@mixin imagenes ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+.caracteristicas{
+    img{
+        @include imagenes(120px,120px);
+    }
+}
+
+.contenedor{
+    h5{
+        img{
+            @include imagenes(30px,30px);
+        }
+    }
+}
+.social{
+    li{
+        img{
+            @include imagenes(60px,60px);
+        }
+    }
+}
+.teoria2{
+    img{
+        @include imagenes(460px,300px);
+    }
+}
+.metodo2{
+    img{
+        @include imagenes(460px,300px);
+    }
+}
+.bloques{
+    img{
+        @include imagenes(70px,70px);
+    }
+}
+.redsocial{
+    img{
+        @include imagenes(120px,120px);
+    }
+}
+@media (max-width:576px) {
+    .redsocial{
+        img{
+            @include imagenes(80px,80px);
+        }
+    }
+    
+}
+
+@mixin flexbox ($dis,$direccion){
+    display: $dis;
+    flex-direction: $direccion;
+}
+.caracteristicas{
+    text-align: $centro;
+    justify-content: space-between;
+    font-size: 23px;
+    color:rgb(17, 95, 95);
+    @include flexbox(flex,row);
+}
+.ciao{
+    padding-left: 2%;
+    @include flexbox(flex,column);
+}
+.bloques{
+    align-items: center;
+    justify-content: stretch;
+    @include flexbox(flex,row);
+}
+@media (max-width:576px){
+    .contenedor-principal{
+        @include flexbox(flex,column-reverse);
+    }
+    .formulario_de_contacto{
+        @include flexbox(flex,column);
+    }
+    .redes{
+        @include flexbox(flex,row);
+    }
+}
+.redsocial{
+    justify-content: space-evenly;
+    @include flexbox(flex,row);
+}

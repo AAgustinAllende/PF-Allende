@@ -1,0 +1,29 @@
+%bg-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    height: 600px;
+}
+
+.home{
+    background-image: url(../imgs/coliseoindex.jpg);
+    background-attachment: local;
+    @extend %bg-img;
+}
+.contacto{
+    background-image: url(../imgs/vespa_italia.jpg);
+    background-attachment: local;
+    @extend %bg-img;
+}
+.certificado_celi{
+    background-image: url(../imgs/examenceli\ \(1\).jpg);
+    background-attachment: fixed;
+    top: 0;
+    @extend %bg-img;
+}
+.certificado_cils{
+    background-image: url(../imgs/examencils.jpg);
+    background-attachment: fixed;
+    @extend %bg-img;
+}
